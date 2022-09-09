@@ -1,0 +1,70 @@
+body {
+  background-color: #000;
+  margin: 0;
+}
+.container {
+  display: flex;
+}
+.left {
+  width: 780px;
+  height: 775px;
+  background-image: url("images/bg-left.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: -150px 0;
+}
+.right {
+  padding: 36px;
+}
+.right {
+  font-family: TwitterChirpExtendedHeavy, Verdana, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.right h1 {
+  color: #e7e9ea;
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+.right h2 {
+  color: #e7e9ea;
+  font-size: 31px;
+  margin-top: 50px;
+}
+.daftar {
+  padding: 10px 0px;
+}
+.daftar button {
+  text-align: center;
+  font-family: "Google Sans", arial, sans-serif;
+  font-size: 15px;
+  width: 298px;
+  height: 38px;
+  border-radius: 20px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  display: block;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.daftar button svg {
+  display: inline-block;
+  left: -5px;
+  top: 3px;
+  position: relative;
+}
+
+/* responsive */
+@media screen and (max-width: 768px){
+    .left {
+        display: none;
+    }
+    .right h1 {
+        font-size: 50px;
+    }
+    .right h2 {
+        font-size: 20px;
+    }
+}
