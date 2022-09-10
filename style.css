@@ -1,6 +1,7 @@
 body {
   background-color: #000;
   margin: 0;
+  color: #e7e9ea;
 }
 .container {
   display: flex;
@@ -23,13 +24,11 @@ body {
     BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 .right h1 {
-  color: #e7e9ea;
   font-size: 64px;
   font-weight: 700;
   margin-top: 60px;
 }
 .right h2 {
-  color: #e7e9ea;
   font-size: 31px;
   margin-top: 50px;
 }
@@ -37,27 +36,75 @@ body {
   padding: 10px 0px;
 }
 .daftar button {
-  text-align: center;
   font-family: "Google Sans", arial, sans-serif;
   font-size: 15px;
   width: 298px;
   height: 38px;
   border-radius: 20px;
   font-weight: 700;
-  padding-bottom: 5px;
-  display: block;
   cursor: pointer;
   margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .daftar button svg {
   display: inline-block;
   left: -5px;
-  top: 3px;
   position: relative;
+  top: -1.5px;
+  width: 20px;
+  height: 20px;
+}
+.or {
+  font-size: 15px;
+}
+.or .line {
+  background-color: rgb(47, 51, 54);
+  display: inline-block;
+  width: 127px;
+  height: 1px;
+  position: relative;
+  top: -3px;
+}
+.signup {
+  max-width: 320px;
+  max-height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.signup a {
+  box-sizing: border-box;
+  display: flex;
+  background-color: rgb(29, 155, 240);
+  font-size: 13px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 700;
+  width: 298px;
+  height: 38px;
+}
+.signup a:hover {
+  text-decoration: underline;
+}
+.signup .desc {
+  margin-left: 5px;
+}
+.signup span {
+  font-size: 10px;
+  color: #71767b;
+}
+.signup span .blue {
+  color: rgb(29, 155, 240);
+  cursor: pointer;
 }
 
 /* responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .left {
     display: none;
   }
@@ -66,5 +113,40 @@ body {
   }
   .right h2 {
     font-size: 20px;
+  }
+  .daftar button svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .signup a {
+    width: 200px;
+    font-size: 8px;
+    height: 40px;
+  }
+  .signup span {
+    font-size: 8px;
+  }
+  .right h1 {
+    font-size: 20px;
+  }
+  .right h2 {
+    font-size: 15px;
+  }
+  .daftar button {
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .daftar button svg {
+    width: 15px;
+    height: 15px;
+  }
+  .or {
+    font-size: 10px;
+  }
+  .or .line {
+    width: 80px;
   }
 }
